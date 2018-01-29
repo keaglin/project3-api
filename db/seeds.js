@@ -1,4 +1,4 @@
-const mongoose = require('../controllers/controllers.js')
+const mongoose = require('../controllers/bookController.js')
 const seedData = require('./seedData.json')
 const Book = require('../models/BookSchema')
 
