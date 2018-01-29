@@ -5,6 +5,7 @@ const controller = require('./controllers/bookController')
 const app = express()
 const mongoose = require('mongoose')
 const cors = require('cors')
+const handlebars = require('express-handlebars')
 // Passport files:
 const passport = require('passport')
 const flash = require('flash')
