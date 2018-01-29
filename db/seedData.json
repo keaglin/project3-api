@@ -30,6 +30,13 @@
         "quality": 5,
         "quote": "Some More Quotes",
         "owner": "user id here"
+    },
+    {
+        "title": "Booky",
+        "author": "Someone",
+        "published": 1996,
+        "quality": 3,
+        "quote": "More Quotes",
+        "owner": "user id here"
     }
-    
 ]

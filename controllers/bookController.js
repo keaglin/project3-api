@@ -13,4 +13,15 @@ Router.get('/', (req, res) => {
     })
 })
 
+Router.get('/:title', (req, res) => {
+    Book.find({title: req.params.title})
+    .then((book) => {
+        res.json(book)
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+})
+
+
 module.exports = Router
