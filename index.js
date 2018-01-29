@@ -32,6 +32,15 @@ app.use(parser.json({extended: false}))
 
 app.set('port', process.env.PORT || 3000)
 
+//set hbs views to test user auth pages:
+app.set('view engine', 'handlebars')
+app.engine('.hbs', handlebars({
+    extname: '.hbs',
+    partialsDir: './views/',
+    layoutsDir: './views',
+    defaultLayout: 'layout' 
+}))
+
 app.use(function (req, res, next) {
     res.locals.currentUser = req.user;
     next();
