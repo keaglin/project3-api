@@ -17,7 +17,11 @@ const userController = require('./controllers/userController.js')
 app.use(morgan('dev'))
 app.use(cookieParser())
 // use session encryption:
-app.use(session({ secret: 'WDI-PROJECT-3' }))
+app.use(session({ 
+    secret: 'WDI-PROJECT-3',
+    resave: true,
+    saveUninitialized: false
+ }))
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(flash())
