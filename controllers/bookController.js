@@ -14,19 +14,61 @@ Router.get('/', (req, res) => {
 })
 
 Router.get('/:title', (req, res) => {
-    Book.find({title: req.params.title})
-    .then((book) => {
+  Book.find({
+    title: req.params.title
+  })
+      .then((book) => {
         res.json(book)
-    })
-    .catch((err) => {
+      })
+      .catch((err) => {
         console.log(err)
-    })
+      })
 })
 
-// update: 
+Router.get('/:author', (req, res) => {
+  Book.find({
+    author: req.params.author
+  })
+        .then((book) => {
+          res.json(book)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+})
 
+Router.post('/:title', (req, res) => {
+  Book.create(req.body.book)
+          .then((book) => {
+            res.redirect(`/books/${book.title}`)
+          })
+          .catch((err) => {
+            console.log(err)
+          })
+})
 
-// Delete:
+Router.put('/:title', (req, res) => {
+  Book.findOneAndUpdate({
+    title: req.params.title
+  }, req.body.book, {new: true})
+        .then((book) => {
+          res.redirect(`/books/${book.title}`)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+})
 
+Router.delete('/:title', (req, res) => {
+  Book.findOneAndRemove({
+    title: req.params.title
+  })
+        .then(() => {
+          res.redirect('/books')
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+})
 
 module.exports = Router
