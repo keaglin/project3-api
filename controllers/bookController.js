@@ -52,8 +52,11 @@ Router.put('/:title', (req, res) => {
     title: req.params.title
   }, req.body.book, {new: true})
       .then((book) => {
-        res.redirect(`/books/` + req.params.title)
-       })
+        res.json(book)
+      })
+      // .then((book) => {
+      //    res.redirect(`/books/${req.params.title}`)
+      //  })
       .catch((err) => {
         console.log(err)
       })
