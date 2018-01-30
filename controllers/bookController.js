@@ -51,12 +51,19 @@ Router.put('/:title', (req, res) => {
   Book.findOneAndUpdate({
     title: req.params.title
   }, req.body.book, {new: true})
+  .then(
+    Book.find({
+    title: req.params.title
+  }))
        .then((book) => {
-         res.redirect(`/books/${req.params.title}`)
+         res.json(book)
        })
        .catch((err) => {
          console.log(err)
        })
+      //  .then((book) => {
+      //    res.redirect(`/books/${req.params.title}`)
+      //  })
 })
 
 Router.delete('/:title', (req, res) => {
