@@ -18,22 +18,20 @@ const userController = require('./controllers/userController.js')
 app.use(cors())
 app.use(methodOverride('_method'))
 
-app.configure(function() {
-    app.use(morgan('dev'))
-    app.use(cookieParser())
-    app.use(parser.urlencoded({extended: true}))
-    app.use(parser.json({extended: false}))
-    // use session encryption:
-    app.use(session({ 
-        secret: 'WDI-PROJECT-3',
-        resave: true,
-        saveUninitialized: false
-    }))
-    app.use(passport.initialize())
-    app.use(passport.session())
-    app.use(flash())
-    app.use(app.router)
-})
+app.use(morgan('dev'))
+app.use(cookieParser())
+app.use(parser.urlencoded({extended: true}))
+app.use(parser.json({extended: false}))
+// use session encryption:
+app.use(session({ 
+    secret: 'WDI-PROJECT-3',
+    resave: true,
+    saveUninitialized: false
+}))
+app.use(passport.initialize())
+app.use(passport.session())
+app.use(flash())
+
 
 require('./configs/passport')(passport);
 
