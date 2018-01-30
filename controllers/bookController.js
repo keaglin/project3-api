@@ -52,9 +52,6 @@ Router.put('/:title', (req, res) => {
     title: req.params.title
   }, req.body.book, {new: true})
       .then((book) => {
-        res.json(book)
-      })
-      .then((book) => {
         res.redirect(`/books/` + req.params.title)
        })
       .catch((err) => {
