@@ -15,20 +15,6 @@ router.route('/login')
 router.route("/logout")
 .get(getLogout)
 
-
-// router.get('/:id', (req, res) => {
-//     User.find({
-//       id: req.params.id
-//     })
-//          .then((user) => {
-//            res.json(user)
-//          })
-//          .catch((err) => {
-//            console.log(err)
-//          })
-//   })
-
-
 // function for authenticated user:
 function authenticatedUser(req, res, next) {
   // If the user is authenticated, then we continue the execution
