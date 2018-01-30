@@ -37,7 +37,7 @@ function getSignup(req, res, next) {
 function postSignup(req, res, next) {
   // local signup has to match the local signup in passport.use export: **********************
   var signupStrategy = passport.authenticate('local-signup', {
-    successRedirect : '/',
+    successRedirect : '/profile',
     failureRedirect : '/signup',
     failureFlash : true
   });
@@ -70,7 +70,8 @@ function getLogout(req, res) {
 
 // Restricted page
 function profile(req, res){
-  res.send("logged in");
+  res.json(User);
+  console.log(req.user)
 
 }
 
