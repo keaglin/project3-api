@@ -39,7 +39,7 @@ module.exports = function(passport) {
      // Create a new user
      var newUser            = new User();
      newUser.local.email    = email;
-     // not saving password in database - ENCRYPTING first:
+     // not saving password in database 
      newUser.local.password = newUser.encrypt(password);
  
      newUser.save(function(err) {

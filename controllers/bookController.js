@@ -40,7 +40,7 @@ Router.get('/:author', (req, res) => {
 Router.post('/:title', (req, res) => {
   Book.create(req.body.book)
          .then((book) => {
-           res.redirect(`/books/${req.params.title}`)
+           res.json(book)
          })
          .catch((err) => {
            console.log(err)
@@ -54,9 +54,6 @@ Router.put('/:title', (req, res) => {
       .then((book) => {
         res.json(book)
       })
-      // .then((book) => {
-      //    res.redirect(`/books/${req.params.title}`)
-      //  })
       .catch((err) => {
         console.log(err)
       })
