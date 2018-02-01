@@ -6,7 +6,8 @@ const RecordSchema = new mongoose.Schema({
     released: Number,
     quality: Number,
     song: String,
-    owner: String
+    owner: String,
+    imageUrl: String
 })
 
 const Record = mongoose.model('Record', RecordSchema)

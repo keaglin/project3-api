@@ -5,7 +5,9 @@
         "published": 1990,
         "quality": 4,
         "quote": "Some Quotes",
-        "owner": "user id here"
+        "owner": "user id here",
+        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        
     },
     {
         "title": "48 Laws of Power",
@@ -13,7 +15,9 @@
         "published": 1980,
         "quality": 2,
         "quote": "Some Quotes, Some Quotes",
-        "owner": "user id here"
+        "owner": "user id here",
+        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        
     },
     {
         "title": "Some Book",
@@ -21,7 +25,9 @@
         "published": 1996,
         "quality": 3,
         "quote": "More Quotes",
-        "owner": "user id here"
+        "owner": "user id here",
+        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        
     },
     {
         "title": "Another Book",
@@ -29,7 +35,9 @@
         "published": 1985,
         "quality": 5,
         "quote": "Some More Quotes",
-        "owner": "user id here"
+        "owner": "user id here",
+        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        
     },
     {
         "title": "Booky",
@@ -37,6 +45,8 @@
         "published": 1996,
         "quality": 3,
         "quote": "More Quotes",
-        "owner": "user id here"
+        "owner": "user id here",
+        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        
     }
 ]

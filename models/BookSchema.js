@@ -7,6 +7,7 @@ const BookSchema = new mongoose.Schema({
     quality: Number,
     quote: String,
     owner: String,
+    imageUrl: String    
 })
 
 const Book = mongoose.model('Book', BookSchema)

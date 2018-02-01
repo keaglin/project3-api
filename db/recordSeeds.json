@@ -5,7 +5,8 @@
     "released": "2018",
     "quality": "2",
     "song": "",
-    "owner": "0"
+    "owner": "0",
+    "imageUrl": "https://drive.google.com/file/d/1mWaEaW14_ftpDJM2MawwOAs9LNxRFJW-/view?usp=sharing"
   },
   {
     "name": "Ephorize",
@@ -13,7 +14,9 @@
     "released": "2018",
     "quality": "5",
     "song": "Exit",
-    "owner": "1"
+    "owner": "1",
+    "imageUrl": "https://drive.google.com/file/d/1mWaEaW14_ftpDJM2MawwOAs9LNxRFJW-/view?usp=sharing"
+    
   },
   {
     "name": "Paranoia",
@@ -21,7 +24,9 @@
     "released": "2018",
     "quality": "3",
     "song": "Prosper",
-    "owner": "2"
+    "owner": "2",
+    "imageUrl": "https://drive.google.com/file/d/1mWaEaW14_ftpDJM2MawwOAs9LNxRFJW-/view?usp=sharing"
+    
   },
   {
     "name": "Culture II",
@@ -29,7 +34,9 @@
     "released": "2018",
     "quality": "4",
     "song": "Narcos",
-    "owner": "3"
+    "owner": "3",
+    "imageUrl": "https://drive.google.com/file/d/1mWaEaW14_ftpDJM2MawwOAs9LNxRFJW-/view?usp=sharing"
+    
   },
   {
     "name": "Luv is Rage 2",
@@ -37,6 +44,8 @@
     "released": "2017",
     "quality": "4",
     "song": "Dark Queen",
-    "owner": "4"
+    "owner": "4",
+    "imageUrl": "https://drive.google.com/file/d/1mWaEaW14_ftpDJM2MawwOAs9LNxRFJW-/view?usp=sharing"
+    
   }
 ]
