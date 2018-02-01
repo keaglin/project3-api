@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Scallops Hotel",
+    "artist": "Sovereign Nose of Your Arrogant Face",
+    "released": "2018",
+    "quality": "2",
+    "song": "",
+    "owner": "0"
+  },
+  {
+    "name": "Ephorize",
+    "artist": "Cupcakke",
+    "released": "2018",
+    "quality": "5",
+    "song": "Exit",
+    "owner": "1"
+  },
+  {
+    "name": "Paranoia",
+    "artist": "Dave East",
+    "released": "2018",
+    "quality": "3",
+    "song": "Prosper",
+    "owner": "2"
+  },
+  {
+    "name": "Culture II",
+    "artist": "Migos",
+    "released": "2018",
+    "quality": "4",
+    "song": "Narcos",
+    "owner": "3"
+  },
+  {
+    "name": "Luv is Rage 2",
+    "artist": "Lil Uzi Vert",
+    "released": "2017",
+    "quality": "4",
+    "song": "Dark Queen",
+    "owner": "4"
+  }
+]
