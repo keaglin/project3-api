@@ -6,7 +6,7 @@
         "quality": 4,
         "quote": "Some Quotes",
         "owner": "user id here",
-        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        "imageUrl": "https://images.gr-assets.com/books/1388494095l/12759.jpg"
         
     },
     {
@@ -16,37 +16,47 @@
         "quality": 2,
         "quote": "Some Quotes, Some Quotes",
         "owner": "user id here",
-        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41ILsjEMw-L._SX356_BO1,204,203,200_.jpg"
         
     },
     {
-        "title": "Some Book",
-        "author": "Someone",
-        "published": 1996,
-        "quality": 3,
+        "title": "The Hobbit",
+        "author": "Some dude",
+        "published": 1937,
+        "quality": 4,
         "quote": "More Quotes",
         "owner": "user id here",
-        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/61OfVAQBaWL._SX301_BO1,204,203,200_.jpg"
         
     },
     {
-        "title": "Another Book",
+        "title": "The Fellowship of the Ring",
         "author": "Someone",
-        "published": 1985,
+        "published": 1954,
         "quality": 5,
         "quote": "Some More Quotes",
         "owner": "user id here",
-        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Fellowship_of_the_Ring_cover.gif"
         
     },
     {
-        "title": "Booky",
-        "author": "Someone",
-        "published": 1996,
+        "title": "The Two Towers",
+        "author": "Some dude",
+        "published": 1954,
         "quality": 3,
         "quote": "More Quotes",
         "owner": "user id here",
-        "imageUrl": "https://drive.google.com/file/d/1Au052RaB7Ew0kGiRKvLrCtmtn5RabzWh/view?usp=sharing"
+        "imageUrl": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/6182/9780618260591.jpg"
+        
+    },
+    {
+        "title": "The Return of the King",
+        "author": "Some dude",
+        "published": 1955,
+        "quality": 3,
+        "quote": "More Quotes",
+        "owner": "user id here",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/41KGl2FqeAL.jpg"
         
     }
 ]
