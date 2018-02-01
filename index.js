@@ -12,23 +12,29 @@ const flash = require('flash')
 const morgan = require('morgan')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
+const cookieSession = require('cookie-session')
 const userController = require('./controllers/userController.js')
+
+app.use(cors())
+app.use(methodOverride('_method'))
 
 app.use(morgan('dev'))
 app.use(cookieParser())
+app.use(parser.urlencoded({extended: true}))
+app.use(parser.json({extended: false}))
 // use session encryption:
-app.use(session({ secret: 'WDI-PROJECT-3' }))
+app.use(session({ 
+    secret: 'WDI-PROJECT-3',
+    resave: true,
+    saveUninitialized: false
+}))
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(flash())
 
 require('./configs/passport')(passport)
 
-app.use(cors())
-
-app.use(methodOverride('_method'))
-app.use(parser.urlencoded({extended: true}))
-app.use(parser.json({extended: false}))
+require('./configs/passport')(passport);
 
 app.set('port', process.env.PORT || 3000)
 

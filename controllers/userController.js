@@ -15,7 +15,6 @@ router.route('/login')
 router.route("/logout")
 .get(getLogout)
 
-
 // function for authenticated user:
 function authenticatedUser(req, res, next) {
   // If the user is authenticated, then we continue the execution
@@ -37,7 +36,7 @@ function getSignup(req, res, next) {
 function postSignup(req, res, next) {
   // local signup has to match the local signup in passport.use export: **********************
   var signupStrategy = passport.authenticate('local-signup', {
-    successRedirect : '/',
+    successRedirect : '/profile',
     failureRedirect : '/signup',
     failureFlash : true
   });
@@ -54,7 +53,7 @@ function getLogin(req, res, next) {
 // POST /login (if verification was a success, allow entry):
 function postLogin(req, res, next) {
   var loginProperty = passport.authenticate('local-login', {
-    successRedirect : '/',
+    successRedirect : '/profile',
     failureRedirect : '/login',
     failureFlash : true
   });
@@ -68,11 +67,55 @@ function getLogout(req, res) {
   res.redirect('/');
 }
 
+// // Restricted page
+// function profile(req, res){
+//   res.json(User);
+//   console.log(req.user)
+
+// }
+
 // Restricted page
 function profile(req, res){
-  res.send("logged in");
+    router.get('/:id', (req, res) => {
+        User.find({
+          id: req.params.id
+        })
+             .then((user) => {
+               res.json(user)
+             })
+             .catch((err) => {
+               console.log(err)
+             })
+      })
+ 
+  }
 
-}
+// user crud:
 
+// update User: 
+router.put('/:id', (req, res) => {
+    User.findOneAndUpdate({
+        id: req.params.id
+      }, req.body.user, {new: true})
+           .then((user) => {
+             res.redirect(`/${user.id}`)
+           })
+           .catch((err) => {
+             console.log(err)
+           })
+    })
+    
+// delete User
+router.delete('/:id', (req, res) => {
+    User.findOneAndRemove({
+        id: req.params.id
+    })
+            .then(() => {
+            res.redirect('/books')
+            })
+            .catch((err) => {
+            console.log(err)
+            })
+    })
 
 module.exports = router
