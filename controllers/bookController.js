@@ -18,7 +18,6 @@ Router.get('/:title', (req, res) => {
   })
       .then((book) => {
         res.json(book)
-        // console.log(book)
       })
       .catch((err) => {
         console.log(err)
@@ -57,7 +56,6 @@ Router.put('/:title', (req, res) => {
       .catch((err) => {
         console.log(err)
       })
-
 })
 
 Router.delete('/:title', (req, res) => {
